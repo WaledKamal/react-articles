@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# react-articles
+
+open source blog
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
