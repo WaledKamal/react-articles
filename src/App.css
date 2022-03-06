@@ -1,0 +1,176 @@
+* {
+  font-family: "Roboto";
+}
+
+body {
+  background-color: rgba(214, 214, 214, 0.938);
+}
+
+nav {
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.navbar-brand::first-letter {
+  color: red;
+  font-weight: bold;
+}
+
+.btn-success {
+  color: white !important;
+  width: 100px;
+  background-color: #1c2c4c;
+  border: none;
+}
+
+.card-text {
+  text-overflow: ellipsis;
+}
+
+.card {
+  width: 350px;
+  margin-top: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.card-text {
+  text-overflow: ellipsis !important;
+}
+
+.card-date {
+  color: green;
+  font-weight: 500;
+}
+
+.art-btn {
+  background-color: #1c2c4c;
+  border: none;
+}
+
+.articles-section {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  animation: fadeIn 3.5s;
+  transition: 0.4s;
+  top: 0;
+  bottom: 0;
+}
+
+.main h1 {
+  text-align: center;
+  padding: 20px;
+  color: "white";
+}
+
+.error-container {
+  margin-top: 250px;
+  text-align: center;
+}
+
+.filtter-articles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.filtter-articles button {
+  padding: 5px;
+  background-color: #252525;
+  color: #ffffff;
+  border: none;
+  width: 140px;
+  font-weight: 500;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.image-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.image-article h4 {
+  margin-top: 10px;
+}
+
+.filtter-articles button:hover {
+  background-color: crimson;
+}
+
+.tag-ar-btn {
+  margin-left: 10px;
+  padding: 3px;
+  border: none;
+  border-radius: 10px;
+}
+
+.search-bar {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.search-bar input {
+  margin-top: 10px;
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.search-bar input::placeholder {
+  font-style: italic;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+article {
+  padding: 10px;
+  background: white;
+  font-size: 20px;
+}
+
+/*Footer*/
+footer {
+  margin-top: 10px;
+}
+
+/*Animation*/
+@keyframes fadeIn {
+  0% {
+    filter: grayscale(1);
+  }
+  100% {
+    filter: grayscale(0);
+  }
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 610px) {
+  .filtter-articles{
+    display: grid;
+    grid-template-columns: 100px 155px;
+    justify-content: space-evenly;
+  }
+
+  .filtter-articles button {
+    margin-top: 10px;
+  }
+}  
+
